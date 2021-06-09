@@ -17,7 +17,7 @@ RUN cd /usr/local/ && \
     ln -s /usr/local/miniconda/bin/conda /usr/local/bin/ && \
     conda init bash && \
     /bin/bash -c "source /root/.bashrc" && \
-    conda install -c bioconda seqtk bowtie2 krakenuniq kallisto gmap snap-aligner samtools openssl bedtools bwa mafft bcftools tabix && \
+    conda install -c bioconda seqtk bowtie2 krakenuniq kallisto gmap snap-aligner samtools openssl bedtools bwa mafft bcftools tabix vcf && \
     conda clean -afy
 # Install Picard 
 

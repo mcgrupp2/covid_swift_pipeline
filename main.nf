@@ -114,6 +114,7 @@ if (params.SGRNA_COUNT == false) {
 REFERENCE_FASTA = file("${baseDir}/NC_045512.2.fasta")
 REFERENCE_FASTA_FAI = file("${baseDir}/NC_045512.2.fasta.fai")
 TRIM_ENDS=file("${baseDir}/trim_ends.py")
+FILTER_MULTI_INDEL=file("${baseDir}/filter_multi_indel.py")
 VCFUTILS=file("${baseDir}/vcfutils.pl")
 SPLITCHR=file("${baseDir}/splitchr.txt")
 ADAPTERS = file("${baseDir}/All_adapters.fa")
