@@ -353,7 +353,7 @@ process BamSorting {
 
 // Generate final consensus from pileup from bam.
 process GenerateConsensus {
-    container "quay.io/greninger-lab/swift-pipeline:latest"
+    container "quay.io/mcgrupp2/covid_swift_pipeline:latest"
 
 	// Retry on fail at most three times 
     errorStrategy 'retry'
