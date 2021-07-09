@@ -233,9 +233,10 @@ workflow {
             MASTERFILE
         )
         GenerateConsensus (
-            Clipping.out[0],
+            BamSorting.out[0],
             REFERENCE_FASTA,
             TRIM_ENDS,
+            FILTER_MULTI_INDEL,
             FIX_COVERAGE,
             VCFUTILS,
             REFERENCE_FASTA_FAI,
