@@ -1,6 +1,6 @@
 import vcf
 import itertools
-import numpy as np
+#import numpy as np
 import argparse
 #import pdb
 
@@ -12,7 +12,7 @@ def check_for_indels(vcfs):
 
 def find_min_multiIMF(indels):
     combs = list(itertools.combinations([indels[i][0] for i in range(len(indels))], 2))
-    duplicates=np.unique([x[0] for x in combs if x[0]==x[1]])
+    duplicates=list(set([x[0] for x in combs if x[0]==x[1]]))
     dup_dict={x:[] for x in duplicates}
     for i in indels:
         if i[0] in dup_dict:
